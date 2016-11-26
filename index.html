@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PokeDex</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+<body>
+   <div class="container" id="title"><span>Pokedex</span></div>
+<div class="container" id="content">
+    <div class="row">
+        <div class="col-lg-9 col-md-9 col-sm-9 col-xs-6">
+            <div class="row">
+                <div id="pokedex">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="pokemon ">
+                            <img src="">
+                            <p class ="name"></p>
+                            <span class="types"></span>
+                            <span class="types"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="pokemon ">
+                            <img src="">
+                            <p class ="name"></p>
+                            <span class="types"></span>
+                            <span class="types"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="pokemon ">
+                            <img src="">
+                            <p class ="name"></p>
+                            <span class="types"></span>
+                            <span class="types"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="pokemon ">
+                            <img src="">
+                            <p class ="name"></p>
+                            <span class="types"></span>
+                            <span class="types"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="pokemon ">
+                            <img src="">
+                            <p class ="name"></p>
+                            <span class="types"></span>
+                            <span class="types"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="pokemon ">
+                            <img src="">
+                            <p class ="name"></p>
+                            <span class="types"></span>
+                            <span class="types"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="pokemon ">
+                            <img src="">
+                            <p class ="name"></p>
+                            <span class="types"></span>
+                            <span class="types"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="pokemon ">
+                            <img src="">
+                            <p class ="name"></p>
+                            <span class="types"></span>
+                            <span class="types"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                        <div class="pokemon ">
+                            <img src="">
+                            <p class ="name"></p>
+                            <span class="types"></span>
+                            <span class="types"></span>
+                        </div>
+                    </div>
+                </div>
+
+
+                    <button class="btn-primary" id="load_more">Load more</button>
+
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-3 col-sm-3 col-xs-6">
+            <div class="pokemon_info">
+                <img src="">
+                <p class="title_name">hjkkk</p>
+                <table>
+                    <tr>
+                        <td>Type</td>
+                        <td id="type"></td>
+                    </tr>
+                    <tr>
+                        <td>Attack</td>
+                        <td id="attack"></td>
+                    </tr>
+                    <tr>
+                        <td>Defense</td>
+                        <td id="defence"></td>
+                    </tr>
+                    <tr>
+                        <td>HP</td>
+                        <td id="hp"></td>
+                    </tr>
+                    <tr>
+                        <td>SP Attack</td>
+                        <td id="sp_attack"></td>
+                    </tr>
+                    <tr>
+                        <td>SP Defence</td>
+                        <td id="sp_defence"></td>
+                    </tr>
+                    <tr>
+                        <td>Speed</td>
+                        <td id="speed"></td>
+                    </tr>
+                    <tr>
+                        <td>Weight</td>
+                        <td id="weight"></td>
+                    </tr>
+                    <tr>
+                        <td>Total moves</td>
+                        <td id="total_moves"></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="modal-1">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Loading data...</h4>
+                </div>
+                <div class="modal-body">
+                    <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>
+                   <!-- <span class="sr-only">Loading...</span>-->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button type="button" class="btn btn-success" data-toggle="modal" data-target="#modal-1">Open modal window</button>
+</div>
+   <script src = "https://code.jquery.com/jquery-3.1.1.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+   <script src="script/script.js"></script>
+</body>
+</html>
